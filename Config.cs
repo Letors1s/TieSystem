@@ -66,5 +66,14 @@ namespace TieSystem
 
         [Description("Шанс на сохранение стяжек при развязывании")]
         public int ChanceToSaveTiesOnUncuff = 25;
+
+        [Description("Время поиска стяжек в трупах. (Желательно целое число.)")]
+        public float FriskTieTime = 5f;
+
+        [Description("Дальность обыска. (Желательно целое число.)")]
+        public float FriskDist = 2f;
+
+        [Description("Дальность поиска вещей в трупах. (Желательно целое число.)")]
+        public float FriskItemsTime = 7f;
     }
 }
