@@ -3,11 +3,8 @@ using PlayerRoles;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TieSystem
+namespace TieSystem2
 {
     public class Config : IConfig
     {
@@ -55,25 +52,16 @@ namespace TieSystem
 
         };
 
-        [Description("Включено ограничение стяжек?")]
-        public bool TieCountEnabled = true;
-
         [Description("Время развязывания. (Желательно целое число.)")]
         public float UnTieTime = 60f;
-
-        [Description("При смерти игрок развязывается?")]
-        public bool PlayerUncuffOnDeath = false;
 
         [Description("Шанс на сохранение стяжек при развязывании")]
         public int ChanceToSaveTiesOnUncuff = 25;
 
-        [Description("Время поиска стяжек в трупах. (Желательно целое число.)")]
-        public float FriskTieTime = 5f;
+        [Description("Время обыска . (Желательно целое число.)")]
+        public float FriskTime = 5f;
 
         [Description("Дальность обыска. (Желательно целое число.)")]
         public float FriskDist = 2f;
-
-        [Description("Дальность поиска вещей в трупах. (Желательно целое число.)")]
-        public float FriskItemsTime = 7f;
     }
 }
